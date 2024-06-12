@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Futsal Outdoor A Booking</title>
+    <link rel="stylesheet" href="Schedule.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- or -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="./img/futsal2.jpeg" alt="Futsal Field" class="header-img" />
+        <h1>Futsal Outdoor A</h1>
+        <p>Inspire Arena Sulut</p>
+        <div class="share-icons">
+          <i class="bx bx-git-merge"></i>
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bx-qr-scan"></i>
+          <!-- Tambahkan icon share di sini -->
+          <!-- <button>Share</button> -->
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="tabs">
+          <a href="./Schedule.html" class="tab active">Schedule</a>
+          <a href="./Rules.html" class="tab">Rules</a>
+        </div>
+
+        <div class="booking-section">
+          <div class="filters">
+            <div class="filter">
+              <label for="date">Pilih Tanggal Booking:</label>
+              <input type="date" id="date" />
+              <p>*Priode <span>Tanggal Booking :</span></p>
+              <p>
+                *Tap pada kolom Booking Untuk memilih <span> Jam Booking</span>
+              </p>
+            </div>
+
+            <div class="filter">
+              <label for="court" style="display: inline-block; width: 50%;">Pilih Lapangan:</label>
+              <select id="court" style="width: 300px;">
+                <option value="outdoorA">Futsal Outdoor A</option>
+
+                <!-- Tambahkan opsi lain jika diperlukan -->
+              </select>
+            </div>
+          </div>
+
+          <div class="schedule">
+            <!-- Contoh kotak waktu booking -->
+            <div class="time-slot">
+              08 Jun<br />
+              <span>Saturday</span>
+            </div>
+            <div class="time-slot">
+              09 Jun<br />
+              <span>Sunday</span>
+            </div>
+            <div class="time-slot">
+              10 Jun<br />
+              <span>Monday</span>
+            </div>
+            <div class="time-slot">
+              11 Jun<br />
+              <span>Tuesday</span>
+            </div>
+            <div class="time-slot">
+              12 Jun<br />
+              <span>Wednesday</span>
+            </div>
+            <div class="time-slot">
+              13 Jun<br />
+              <span>Thursday</span>
+            </div>
+
+            <div class="time-slot-booked">
+              <p>08 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-booked">
+              <p>09 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+
+            <!------------- Avaible-------------->
+
+            <div class="time-slot-avaible">
+              <p>10 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>11 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>12 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>13 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+
+            <div class="time-slot-booked">
+              <p>08 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-avaible">
+              <p>09 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>10 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>11 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-booked">
+              <p>12 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-booked">
+              <p>13 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+
+            <div class="time-slot-booked">
+              <p>08 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-booked">
+              <p>09 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-avaible">
+              <p>10 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>11 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>12 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>13 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+
+            <div class="time-slot-booked">
+              <p>08 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-booked">
+              <p>09 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-avaible">
+              <p>10 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>11 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>12 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>13 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+
+            <div class="time-slot-booked">
+              <p>08 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-booked">
+              <p>09 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-avaible">
+              <p>10 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>11 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>12 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>13 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+
+            <div class="time-slot-booked">
+              <p>08 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-booked">
+              <p>09 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-avaible">
+              <p>10 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>11 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>12 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>13 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+
+            <div class="time-slot-booked">
+              <p>08 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-booked">
+              <p>09 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-avaible">
+              <p>10 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>11 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>12 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>13 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-booked">
+              <p>08 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-booked">
+              <p>09 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Booked
+            </div>
+            <div class="time-slot-avaible">
+              <p>10 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>11 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>12 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+            <div class="time-slot-avaible">
+              <p>13 Jun</p>
+              08:00 - 10:00
+              <br /><span>Rp. 125.000</span>
+              <br />
+              Avaible
+            </div>
+
+            <!-- Tambahkan lebih banyak kotak sesuai kebutuhan -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content1">
+        <div class="tabs1">
+          <p> Lanjut Pembayaran</p>
+      
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                 
+                    <h4>COMPANY</h4>
+                    <img src="/img/logo.png" alt="" class="footer-logo">
+                    <span1>My Futsal</span1>
+                    <p>Home</p>
+                    <p>Career</p>
+                    <p>Blog</p>
+                </div>
+                <div class="footer-section product-info">
+                    <h4>PRODUCT</h4>
+                    <p>Venue</p>
+                    <p>Community</p>
+                </div>
+                <div class="footer-section support-info">
+                    <h4>SUPPORT</h4>
+                    <p>API Reference</p>
+                    <p>Insurance</p>
+                    <p>Help Center</p>
+                    <p>Live Chat</p>
+                </div>
+                <div class="logo-section">
+                    <h4>Our Logo</h4>
+                    <img src="/img/logo.png" alt="Company Logo" class="footer-logo1">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>PT. Yunta Mandiri Group</span>
+                <p>© 2024 MY FUTSAL. All Right Reserved | Privacy Policy | Legal</p>
+                <div class="social-media">
+                    <i class="bx bxl-instagram"></i>
+                    <i class='bx bxl-linkedin' ></i>
+                    <i class='bx bxl-youtube' ></i>
+                    <i class='bx bxl-facebook-square' ></i>
+                    <!-- Tambahkan icon share di sini -->
+                    <!-- <button>Share</button> -->
+                  </div>
+                <div class="contact-info">
+                    <p>support@myfutsal.com | +62 815 1361 6969</p>
+                </div>
+            </div>
+        </footer>
+  </body>
+</html>

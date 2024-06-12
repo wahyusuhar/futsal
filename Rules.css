@@ -1,0 +1,380 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* 
+.header-content {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+} */
+
+.header-content h1 {
+  margin: 10px 0;
+  font-size: 2em;
+  text-align: left;
+}
+
+.header-content p {
+  color: #ef2626;
+  text-align: left;
+  border-bottom: 2px solid red;
+  width: fit-content;
+}
+
+.share-icons {
+  position: absolute;
+  top: 520px;
+  right: 65rem;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+.share-icons i {
+  font-size: 34px;
+  margin-right: 10px;
+}
+.share-icons .bx-qr-scan {
+  background-color: #313030;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  color: #ef2626;
+}
+.tabs {
+  display: flex;
+  justify-content: start;
+  margin: 80px 0;
+  padding: 5px;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  position: relative;
+}
+
+.tabs::before,
+.tabs::after {
+  content: "";
+  position: absolute;
+  left: 1020px;
+  right: 50px;
+  height: 0;
+  background-color: #888;
+}
+
+.tabs::before {
+  top: 0;
+}
+
+.tabs::after {
+  bottom: 0;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  /* border: 1px solid black; */
+  /* background-color: #c4c0c0; */
+}
+
+.tab.active {
+  background-color: #ff4d4d;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0;
+
+  padding: 20px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.rules-box,
+.health-protocol
+{
+  background-color: #e5e0e0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.operation-hours{
+  background-color: #e5e0e0;
+  padding: 20px;
+  width: 305px;
+  border-radius: 8px;
+  height: 350px;
+}
+
+.rules-box {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.health-protocol {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: -170px; 
+}
+.protocol-item {
+  /* grid-column: span 1; */
+  bottom: 120px;
+  margin-top: 5px;
+  padding: 10px;
+  
+  
+
+}
+
+h3{
+  padding: 0;
+  color: #c31818;
+  margin-top: -5px;
+}
+  
+
+
+.operation-hours{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.health-protocol span {
+  color: #c31818;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.health-protocol p {
+  color: #242323;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.information {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.rules-box h3,
+.health-protocol h3,
+.operation-hours h3,
+.information h3 {
+  margin-top: 0;
+  color: #c31818;
+}
+
+.rules-box ul {
+  list-style-type: disc;
+  margin-left: -5px;
+}
+.rules-box li {
+  color: #242323;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.operation-hours table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.operation-hours td {
+  padding: 8px;
+  color: #242323;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.information{
+  background-color: #e5e0e0;
+  padding: 15px;
+  border-radius: 8px;
+  width: 305px;
+  height: 200px;
+  margin-top: -50px;
+}
+
+.information p {
+  color: #060606;
+  font-size: 1rem;
+  margin-top: -10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  display: inline-block; /* Ini memastikan p di-inline dengan ikon */
+  vertical-align: middle; /* Vertikal sejajar dengan ikon */
+  line-height: 54px; /* Sesuaikan dengan ukuran ikon */
+}
+
+.information img{
+  color: #eaeaea;
+  width: 30px;
+  display: inline-block;
+  font-size: 4px; /* Sesuaikan ukuran ikon */
+  vertical-align: middle;
+  margin-right: 5px; /* Sesuaikan jarak dengan teks */
+  margin-top: -20px;
+}
+.location{
+  margin-top: -10px;
+}
+.location p {
+  color: #060606;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-block; /* Ini memastikan p di-inline dengan ikon */
+  vertical-align: middle; /* Vertikal sejajar dengan ikon */
+  line-height: 15px; /* Sesuaikan dengan ukuran ikon */
+  padding: 10px;
+}
+
+.location img{
+  color: #eaeaea;
+  width: 30px;
+  display: inline-block;
+  font-size: 4px; /* Sesuaikan ukuran ikon */
+  vertical-align: middle;
+  margin-right: 5px; /* Sesuaikan jarak dengan teks */
+}
+
+
+.footer {
+  color: #333;
+  padding: 40px 20px;
+  border-top: 1px solid #eaeaea;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.footer-logo1 {
+  width: 50px;
+  margin-bottom: 10px;
+  color: black;
+  vertical-align: middle;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+
+span1 {
+  color: #0f0f0f;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600;
+  margin-top: -25px;
+  margin-left: -20px;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  text-align: start;
+  margin-right: -20px;
+  font-weight: 700;
+}
+
+.footer-logo {
+  width: 50px;
+  margin-bottom: 10px;
+  color: black;
+  vertical-align: middle;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+.logo-section img {
+  width: 150px;
+}
+
+.footer-bottom {
+  text-align: start;
+  border-top: 1px solid #eaeaea;
+  padding-top: 20px;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  margin-left: 150px;
+}
+.footer-bottom span {
+  color: #0f0f0f;
+  font-weight: 800;
+  margin-left: 150px;
+}
+
+.social-media {
+  margin: 10px 0;
+  text-align: end;
+  margin-top: -50px;
+  margin-right: 200px;
+}
+
+.social-media i {
+  width: 30px;
+  margin: 0 10px;
+  font-size: 50px;
+}
+
+.contact-info {
+  margin: 10px 0;
+  text-align: end;
+  margin-right: 150px;
+}
